@@ -41,6 +41,7 @@ sites:
 status-website:
   cname: status.gadupec.com.br
   name: GADUPEC
+  favicon: https://gadupec-portal.vercel.app/icon.png
   introTitle: "Status dos serviços GADUPEC"
   introMessage: "Disponibilidade do portal e dos módulos, medida de fora a cada 5 minutos."
   navbar:
