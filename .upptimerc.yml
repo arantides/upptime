@@ -1,31 +1,48 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Status público externo do GADUPEC (Upptime) — status.gadupec.com.br
+owner: arantides
+repo: upptime
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Portal GADUPEC
+    # HOJE: URL viva do Vercel. Pós-migração, troque por https://gadupec.com.br
+    url: https://gadupec-portal.vercel.app
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Pecuária
+    url: https://pecuaria.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Confinamento
+    url: https://confinamento.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Financeiro
+    url: https://financeiro.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Compras
+    url: https://compras.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Estoque (Almoxarifado)
+    url: https://almox.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Clima
+    url: https://clima.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Frotas
+    url: https://frotas.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Patrimônio
+    url: https://patrimonio.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Protocolo
+    url: https://protocolo.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
+  - name: Gestão
+    url: https://gestao.gadupec.com.br
+    expectedStatusCodes: [200, 301, 302, 307, 401, 403]
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.gadupec.com.br
+  name: GADUPEC
+  introTitle: "Status dos serviços GADUPEC"
+  introMessage: "Disponibilidade do portal e dos módulos, medida de fora a cada 5 minutos."
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
