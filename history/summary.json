@@ -5,18 +5,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/gadupec-portal.vercel.app.ico",
     "slug": "portal-gadupec",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "99.91%",
+    "uptimeDay": "93.48%",
+    "uptimeWeek": "99.07%",
+    "uptimeMonth": "99.79%",
+    "uptimeYear": "99.91%",
     "time": 4466,
     "timeDay": 542,
-    "timeWeek": 2779,
-    "timeMonth": 4186,
+    "timeWeek": 2935,
+    "timeMonth": 4160,
     "timeYear": 4466,
     "dailyMinutesDown": {
-      "2026-08-18": 0
+      "2026-08-19": 69,
+      "2026-08-18": 25
     }
   },
   {
@@ -33,7 +34,7 @@
     "time": 2223,
     "timeDay": 2484,
     "timeWeek": 2032,
-    "timeMonth": 2192,
+    "timeMonth": 2193,
     "timeYear": 2223,
     "dailyMinutesDown": {}
   },
@@ -50,8 +51,8 @@
     "uptimeYear": "100.00%",
     "time": 2173,
     "timeDay": 1964,
-    "timeWeek": 1771,
-    "timeMonth": 2114,
+    "timeWeek": 1792,
+    "timeMonth": 2115,
     "timeYear": 2173,
     "dailyMinutesDown": {}
   },
@@ -68,8 +69,8 @@
     "uptimeYear": "100.00%",
     "time": 2180,
     "timeDay": 2357,
-    "timeWeek": 1893,
-    "timeMonth": 2126,
+    "timeWeek": 1916,
+    "timeMonth": 2125,
     "timeYear": 2180,
     "dailyMinutesDown": {}
   },
@@ -86,8 +87,8 @@
     "uptimeYear": "100.00%",
     "time": 2167,
     "timeDay": 2081,
-    "timeWeek": 1757,
-    "timeMonth": 2086,
+    "timeWeek": 1904,
+    "timeMonth": 2084,
     "timeYear": 2167,
     "dailyMinutesDown": {}
   },
@@ -104,8 +105,8 @@
     "uptimeYear": "100.00%",
     "time": 2210,
     "timeDay": 2213,
-    "timeWeek": 1960,
-    "timeMonth": 2220,
+    "timeWeek": 2019,
+    "timeMonth": 2223,
     "timeYear": 2210,
     "dailyMinutesDown": {}
   },
@@ -122,8 +123,8 @@
     "uptimeYear": "100.00%",
     "time": 2164,
     "timeDay": 2043,
-    "timeWeek": 1840,
-    "timeMonth": 2100,
+    "timeWeek": 1863,
+    "timeMonth": 2094,
     "timeYear": 2164,
     "dailyMinutesDown": {}
   },
@@ -140,7 +141,7 @@
     "uptimeYear": "100.00%",
     "time": 2172,
     "timeDay": 2120,
-    "timeWeek": 1846,
+    "timeWeek": 1886,
     "timeMonth": 2119,
     "timeYear": 2172,
     "dailyMinutesDown": {}
@@ -158,8 +159,8 @@
     "uptimeYear": "100.00%",
     "time": 2113,
     "timeDay": 2016,
-    "timeWeek": 1779,
-    "timeMonth": 2101,
+    "timeWeek": 1796,
+    "timeMonth": 2092,
     "timeYear": 2113,
     "dailyMinutesDown": {}
   },
@@ -176,8 +177,8 @@
     "uptimeYear": "100.00%",
     "time": 2120,
     "timeDay": 1951,
-    "timeWeek": 1775,
-    "timeMonth": 2055,
+    "timeWeek": 1795,
+    "timeMonth": 2052,
     "timeYear": 2120,
     "dailyMinutesDown": {}
   },
@@ -194,8 +195,8 @@
     "uptimeYear": "100.00%",
     "time": 2070,
     "timeDay": 1939,
-    "timeWeek": 1737,
-    "timeMonth": 2025,
+    "timeWeek": 1751,
+    "timeMonth": 2021,
     "timeYear": 2070,
     "dailyMinutesDown": {}
   }
