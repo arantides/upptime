@@ -5,15 +5,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/gadupec-portal.vercel.app.ico",
     "slug": "portal-gadupec",
     "status": "up",
-    "uptime": "99.87%",
+    "uptime": "99.88%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.59%",
-    "uptimeYear": "99.87%",
+    "uptimeYear": "99.88%",
     "time": 4620,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 4665,
+    "timeMonth": 4849,
     "timeYear": 4620,
     "dailyMinutesDown": {
       "2026-08-19": 153,
@@ -34,7 +34,7 @@
     "time": 2220,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2233,
+    "timeMonth": 2242,
     "timeYear": 2220,
     "dailyMinutesDown": {}
   },
@@ -52,7 +52,7 @@
     "time": 2173,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2097,
+    "timeMonth": 2156,
     "timeYear": 2173,
     "dailyMinutesDown": {}
   },
@@ -70,7 +70,7 @@
     "time": 2189,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2191,
+    "timeMonth": 2251,
     "timeYear": 2189,
     "dailyMinutesDown": {}
   },
@@ -88,7 +88,7 @@
     "time": 2188,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2266,
+    "timeMonth": 2277,
     "timeYear": 2188,
     "dailyMinutesDown": {}
   },
@@ -106,7 +106,7 @@
     "time": 2207,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2177,
+    "timeMonth": 2221,
     "timeYear": 2207,
     "dailyMinutesDown": {}
   },
@@ -124,7 +124,7 @@
     "time": 2154,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2061,
+    "timeMonth": 2114,
     "timeYear": 2154,
     "dailyMinutesDown": {}
   },
@@ -142,7 +142,7 @@
     "time": 2173,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2150,
+    "timeMonth": 2154,
     "timeYear": 2173,
     "dailyMinutesDown": {}
   },
@@ -160,7 +160,7 @@
     "time": 2118,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2101,
+    "timeMonth": 2157,
     "timeYear": 2118,
     "dailyMinutesDown": {}
   },
@@ -178,7 +178,7 @@
     "time": 2119,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2072,
+    "timeMonth": 2091,
     "timeYear": 2119,
     "dailyMinutesDown": {}
   },
@@ -196,7 +196,7 @@
     "time": 2070,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 2040,
+    "timeMonth": 2081,
     "timeYear": 2070,
     "dailyMinutesDown": {}
   }
