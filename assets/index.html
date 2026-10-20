@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Status GADUPEC</title>
+<meta name="description" content="Disponibilidade do portal e dos módulos GADUPEC, medida de fora a cada 5 minutos.">
+<meta name="theme-color" content="#060b12">
+<link rel="icon" href="https://gadupec-portal.vercel.app/icon.png">
+<style>
+:root {
+  --bg: #060b12;
+  --panel: #0b121c;
+  --card: #0d1520;
+  --border: #1c2735;
+  --text: #e6edf3;
+  --muted: #8b98a8;
+  --input: #0a1019;
+  --up: #22c55e;
+  --up-bar: #16a34a;
+  --warn: #f59e0b;
+  --down: #ef4444;
+  --none: #1f2a37;
+  --accent: #2fa86b;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+header { border-bottom: 1px solid var(--border); }
+header .wrap { display: flex; align-items: center; gap: 12px; height: 64px; }
+header img { width: 36px; height: 36px; object-fit: contain; }
+header strong { font-size: 16px; letter-spacing: .3px; }
+header nav { margin-left: auto; }
+header nav a { color: var(--muted); text-decoration: none; font-size: 13px; }
+header nav a:hover { color: var(--text); }
+main { padding: 28px 0 48px; }
+h1 { font-size: 24px; margin: 0 0 4px; font-weight: 650; }
+.intro { color: var(--muted); margin: 0 0 20px; }
+.overall {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--panel); margin-bottom: 16px; font-weight: 600;
+}
+.overall .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--muted); flex: none; }
+.overall.up .dot { background: var(--up); box-shadow: 0 0 0 4px rgba(34,197,94,.15); }
+.overall.warn .dot { background: var(--warn); box-shadow: 0 0 0 4px rgba(245,158,11,.15); }
+.overall.down .dot { background: var(--down); box-shadow: 0 0 0 4px rgba(239,68,68,.15); }
+.toolbar {
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+  padding: 12px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--panel); margin-bottom: 16px;
+}
+.search { flex: 1 1 240px; position: relative; }
+.search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+.search input { width: 100%; padding-left: 32px; }
+input, select {
+  background: var(--input); color: var(--text); border: 1px solid var(--border);
+  border-radius: 6px; height: 34px; padding: 0 10px; font: inherit; font-size: 13px;
+}
+input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.ctl { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .ctl { flex: 1 1 100%; } .ctl select { flex: 1; } }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+.card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.card h2 { font-size: 14px; margin: 0; font-weight: 650; overflow-wrap: anywhere; }
+.host { color: var(--muted); font-size: 12px; margin-top: 2px; overflow-wrap: anywhere; }
+.badge {
+  display: inline-flex; align-items: center; gap: 5px; flex: none;
+  font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; color: #04130a;
+}
+.badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: rgba(0,0,0,.35); }
+.badge.up { background: var(--up); }
+.badge.degraded { background: var(--warn); }
+.badge.down { background: var(--down); color: #fff; }
+.badge.down::before { background: rgba(255,255,255,.6); }
+.metrics { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; margin: 14px 0 4px; }
+.metrics b { color: var(--text); font-weight: 600; }
+.bars { display: flex; gap: 2px; height: 28px; }
+.bars span { flex: 1; border-radius: 2px; background: var(--up-bar); }
+.bars span.warn { background: var(--warn); }
+.bars span.down { background: var(--down); }
+.bars span.none { background: var(--none); }
+.bars-foot { display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; margin-top: 6px; }
+.msg { color: var(--muted); padding: 32px 0; text-align: center; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: 12px; margin-top: 16px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+footer { color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); padding: 16px 0 24px; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="https://gadupec-portal.vercel.app/logo.png" alt="">
+    <strong>GADUPEC</strong>
+    <nav><a href="https://gadupec-portal.vercel.app">Ir para o portal</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <h1>Status dos serviços GADUPEC</h1>
+  <p class="intro">Disponibilidade do portal e dos módulos, medida de fora a cada 5 minutos.</p>
+
+  <div id="overall" class="overall"><span class="dot"></span><span id="overall-text">Carregando…</span></div>
+
+  <div class="toolbar">
+    <label class="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Buscar serviço…" aria-label="Buscar serviço">
+    </label>
+    <label class="ctl">Filtrar:
+      <select id="filter">
+        <option value="all">Todos</option>
+        <option value="up">Operacionais</option>
+        <option value="problem">Com problema</option>
+      </select>
+    </label>
+    <label class="ctl">Ordenar:
+      <select id="sort">
+        <option value="name">Nome</option>
+        <option value="uptime">Disponibilidade</option>
+        <option value="time">Tempo de resposta</option>
+      </select>
+    </label>
+    <label class="ctl">Período:
+      <select id="period">
+        <option value="Day">24 horas</option>
+        <option value="Week" selected>7 dias</option>
+        <option value="Month">30 dias</option>
+        <option value="Year">1 ano</option>
+        <option value="">Tudo</option>
+      </select>
+    </label>
+  </div>
+
+  <div id="grid" class="grid"></div>
+  <p id="msg" class="msg" hidden></p>
+
+  <div class="legend">
+    <span><i style="background:var(--up-bar)"></i>Sem queda no dia</span>
+    <span><i style="background:var(--warn)"></i>Até 1 h fora do ar</span>
+    <span><i style="background:var(--down)"></i>Mais de 1 h fora do ar</span>
+    <span><i style="background:var(--none)"></i>Sem medição</span>
+  </div>
+</main>
+<footer>
+  <div class="wrap">Monitoramento externo via <a href="https://github.com/arantides/upptime">Upptime</a>. Cada barra é um dia; a mais à direita é hoje.</div>
+</footer>
+
+<script>
+(function () {
+  var RAW = "https://raw.githubusercontent.com/arantides/upptime/master/history/";
+  var DAYS = 30;
+  var STATUS_LABEL = { up: "Operacional", degraded: "Instável", down: "Fora do ar" };
+
+  var sites = [];
+  var grid = document.getElementById("grid");
+  var msg = document.getElementById("msg");
+  var q = document.getElementById("q");
+  var filter = document.getElementById("filter");
+  var sort = document.getElementById("sort");
+  var period = document.getElementById("period");
+
+  function pad(n) { return n < 10 ? "0" + n : "" + n; }
+  function dayKey(d) { return d.getUTCFullYear() + "-" + pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate()); }
+  function fmtDate(d) { return pad(d.getUTCDate()) + "/" + pad(d.getUTCMonth() + 1); }
+  function host(url) { try { return new URL(url).host; } catch (e) { return url; } }
+  function pct(s) { return parseFloat(String(s).replace("%", "")) || 0; }
+
+  function parseStartTime(yml) {
+    var m = /^startTime:\s*(\S+)/m.exec(yml);
+    return m ? new Date(m[1]) : null;
+  }
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function bars(site) {
+    var wrap = el("div", "bars");
+    var today = new Date();
+    var start = site.startTime ? dayKey(site.startTime) : null;
+    var down = site.dailyMinutesDown || {};
+    for (var i = DAYS - 1; i >= 0; i--) {
+      var d = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate() - i));
+      var key = dayKey(d);
+      var min = down[key] || 0;
+      var b = el("span");
+      if (start && key < start) {
+        b.className = "none";
+        b.title = fmtDate(d) + ": sem medição";
+      } else {
+        if (min > 60) b.className = "down";
+        else if (min > 0) b.className = "warn";
+        b.title = fmtDate(d) + ": " + (min ? min + " min fora do ar" : "sem queda");
+      }
+      wrap.appendChild(b);
+    }
+    return wrap;
+  }
+
+  function card(site, p) {
+    var a = el("div", "card");
+    var top = el("div", "card-top");
+    var left = el("div");
+    left.appendChild(el("h2", null, site.name));
+    left.appendChild(el("div", "host", host(site.url)));
+    top.appendChild(left);
+    top.appendChild(el("span", "badge " + site.status, STATUS_LABEL[site.status] || site.status));
+    a.appendChild(top);
+
+    var m = el("div", "metrics");
+    var up = el("span"); up.appendChild(document.createTextNode("Disponibilidade ")); up.appendChild(el("b", null, String(site["uptime" + p]).replace(".", ",")));
+    var t = site["time" + p];
+    var rt = el("span"); rt.appendChild(document.createTextNode("Resposta ")); rt.appendChild(el("b", null, t ? "~" + t + " ms" : "—"));
+    m.appendChild(up); m.appendChild(rt);
+    a.appendChild(m);
+
+    a.appendChild(bars(site));
+    var foot = el("div", "bars-foot");
+    foot.appendChild(el("span", null, DAYS + " dias atrás"));
+    foot.appendChild(el("span", null, "hoje"));
+    a.appendChild(foot);
+    return a;
+  }
+
+  function render() {
+    var p = period.value;
+    var term = q.value.trim().toLowerCase();
+    var list = sites.filter(function (s) {
+      if (filter.value === "up" && s.status !== "up") return false;
+      if (filter.value === "problem" && s.status === "up") return false;
+      return !term || s.name.toLowerCase().indexOf(term) >= 0 || host(s.url).indexOf(term) >= 0;
+    });
+    list.sort(function (a, b) {
+      if (sort.value === "uptime") return pct(a["uptime" + p]) - pct(b["uptime" + p]) || a.name.localeCompare(b.name, "pt-BR");
+      if (sort.value === "time") return (b["time" + p] || 0) - (a["time" + p] || 0) || a.name.localeCompare(b.name, "pt-BR");
+      return a.name.localeCompare(b.name, "pt-BR");
+    });
+    grid.textContent = "";
+    list.forEach(function (s) { grid.appendChild(card(s, p)); });
+    msg.hidden = list.length > 0;
+    if (!list.length) msg.textContent = "Nenhum serviço encontrado.";
+  }
+
+  function renderOverall() {
+    var box = document.getElementById("overall");
+    var text = document.getElementById("overall-text");
+    var down = sites.filter(function (s) { return s.status === "down"; }).length;
+    var degraded = sites.filter(function (s) { return s.status === "degraded"; }).length;
+    if (down) { box.className = "overall down"; text.textContent = down === 1 ? "1 serviço fora do ar" : down + " serviços fora do ar"; }
+    else if (degraded) { box.className = "overall warn"; text.textContent = degraded === 1 ? "1 serviço instável" : degraded + " serviços instáveis"; }
+    else { box.className = "overall up"; text.textContent = "Todos os serviços operacionais"; }
+  }
+
+  [q, filter, sort, period].forEach(function (c) { c.addEventListener("input", render); });
+
+  fetch(RAW + "summary.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (data) {
+      sites = data;
+      renderOverall();
+      render();
+      return Promise.all(sites.map(function (s) {
+        return fetch(RAW + s.slug + ".yml", { cache: "no-store" })
+          .then(function (r) { return r.ok ? r.text() : ""; })
+          .then(function (y) { s.startTime = parseStartTime(y); }, function () {});
+      }));
+    })
+    .then(render, function () {
+      document.getElementById("overall").className = "overall";
+      document.getElementById("overall-text").textContent = "Não foi possível carregar o status agora.";
+      msg.hidden = false;
+      msg.textContent = "Tente recarregar a página em alguns instantes.";
+    });
+})();
+</script>
+</body>
+</html>
