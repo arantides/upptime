@@ -5,20 +5,20 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.gadupec.com.br.ico",
     "slug": "portal-gadupec",
     "status": "down",
-    "uptime": "99.91%",
-    "uptimeDay": "99.82%",
-    "uptimeWeek": "99.97%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.91%",
-    "time": 4103,
-    "timeDay": 503,
-    "timeWeek": 638,
-    "timeMonth": 602,
-    "timeYear": 4103,
+    "uptime": "99.80%",
+    "uptimeDay": "83.46%",
+    "uptimeWeek": "97.64%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.80%",
+    "time": 4064,
+    "timeDay": 209,
+    "timeWeek": 602,
+    "timeMonth": 568,
+    "timeYear": 4064,
     "dailyMinutesDown": {
       "2026-08-19": 153,
       "2026-08-18": 25,
-      "2026-10-31": 3
+      "2026-10-31": 238
     }
   },
   {
@@ -27,18 +27,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/pecuaria.gadupec.com.br.ico",
     "slug": "pecuaria",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.84%",
-    "uptimeWeek": "99.98%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "100.00%",
-    "time": 2229,
-    "timeDay": 1484,
-    "timeWeek": 2126,
-    "timeMonth": 2285,
-    "timeYear": 2229,
+    "uptime": "99.89%",
+    "uptimeDay": "83.48%",
+    "uptimeWeek": "97.64%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2208,
+    "timeDay": 109,
+    "timeWeek": 1851,
+    "timeMonth": 2130,
+    "timeYear": 2208,
     "dailyMinutesDown": {
-      "2026-10-31": 2
+      "2026-10-31": 238
     }
   },
   {
@@ -47,18 +47,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/confinamento.gadupec.com.br.ico",
     "slug": "confinamento",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.86%",
-    "uptimeWeek": "99.98%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2200,
-    "timeDay": 1549,
-    "timeWeek": 2244,
-    "timeMonth": 2379,
-    "timeYear": 2200,
+    "uptime": "99.89%",
+    "uptimeDay": "83.49%",
+    "uptimeWeek": "97.64%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2179,
+    "timeDay": 159,
+    "timeWeek": 1935,
+    "timeMonth": 2216,
+    "timeYear": 2179,
     "dailyMinutesDown": {
-      "2026-10-31": 2
+      "2026-10-31": 238
     }
   },
   {
@@ -67,18 +67,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/financeiro.gadupec.com.br.ico",
     "slug": "financeiro",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.87%",
-    "uptimeWeek": "99.98%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2193,
-    "timeDay": 1453,
-    "timeWeek": 2081,
-    "timeMonth": 2225,
-    "timeYear": 2193,
+    "uptime": "99.89%",
+    "uptimeDay": "83.51%",
+    "uptimeWeek": "97.64%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2173,
+    "timeDay": 149,
+    "timeWeek": 1805,
+    "timeMonth": 2075,
+    "timeYear": 2173,
     "dailyMinutesDown": {
-      "2026-10-31": 2
+      "2026-10-31": 237
     }
   },
   {
@@ -87,18 +87,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/compras.gadupec.com.br.ico",
     "slug": "compras",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.89%",
-    "uptimeWeek": "99.98%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2189,
-    "timeDay": 1387,
-    "timeWeek": 2191,
-    "timeMonth": 2200,
-    "timeYear": 2189,
+    "uptime": "99.89%",
+    "uptimeDay": "83.53%",
+    "uptimeWeek": "97.65%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2169,
+    "timeDay": 174,
+    "timeWeek": 1901,
+    "timeMonth": 2051,
+    "timeYear": 2169,
     "dailyMinutesDown": {
-      "2026-10-31": 2
+      "2026-10-31": 237
     }
   },
   {
@@ -107,18 +107,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/almox.gadupec.com.br.ico",
     "slug": "estoque-almoxarifado",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.91%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2210,
-    "timeDay": 1617,
-    "timeWeek": 2164,
-    "timeMonth": 2230,
-    "timeYear": 2210,
+    "uptime": "99.89%",
+    "uptimeDay": "83.54%",
+    "uptimeWeek": "97.65%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2189,
+    "timeDay": 155,
+    "timeWeek": 1909,
+    "timeMonth": 2078,
+    "timeYear": 2189,
     "dailyMinutesDown": {
-      "2026-10-31": 1
+      "2026-10-31": 237
     }
   },
   {
@@ -127,18 +127,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/clima.gadupec.com.br.ico",
     "slug": "clima",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.92%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2152,
-    "timeDay": 1328,
-    "timeWeek": 2089,
-    "timeMonth": 2139,
-    "timeYear": 2152,
+    "uptime": "99.89%",
+    "uptimeDay": "83.56%",
+    "uptimeWeek": "97.65%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2131,
+    "timeDay": 156,
+    "timeWeek": 1807,
+    "timeMonth": 1994,
+    "timeYear": 2131,
     "dailyMinutesDown": {
-      "2026-10-31": 1
+      "2026-10-31": 237
     }
   },
   {
@@ -147,18 +147,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/frotas.gadupec.com.br.ico",
     "slug": "frotas",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.94%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2165,
-    "timeDay": 1336,
-    "timeWeek": 1992,
-    "timeMonth": 2115,
-    "timeYear": 2165,
+    "uptime": "99.89%",
+    "uptimeDay": "83.58%",
+    "uptimeWeek": "97.65%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2145,
+    "timeDay": 173,
+    "timeWeek": 1749,
+    "timeMonth": 1977,
+    "timeYear": 2145,
     "dailyMinutesDown": {
-      "2026-10-31": 1
+      "2026-10-31": 237
     }
   },
   {
@@ -167,18 +167,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/patrimonio.gadupec.com.br.ico",
     "slug": "patrimonio",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.96%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2122,
-    "timeDay": 1540,
-    "timeWeek": 2194,
-    "timeMonth": 2150,
-    "timeYear": 2122,
+    "uptime": "99.89%",
+    "uptimeDay": "83.59%",
+    "uptimeWeek": "97.66%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2103,
+    "timeDay": 201,
+    "timeWeek": 1938,
+    "timeMonth": 2012,
+    "timeYear": 2103,
     "dailyMinutesDown": {
-      "2026-10-31": 1
+      "2026-10-31": 236
     }
   },
   {
@@ -187,18 +187,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/protocolo.gadupec.com.br.ico",
     "slug": "protocolo",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2129,
-    "timeDay": 1337,
-    "timeWeek": 2096,
-    "timeMonth": 2202,
-    "timeYear": 2129,
+    "uptime": "99.89%",
+    "uptimeDay": "83.61%",
+    "uptimeWeek": "97.66%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2109,
+    "timeDay": 166,
+    "timeWeek": 1822,
+    "timeMonth": 2052,
+    "timeYear": 2109,
     "dailyMinutesDown": {
-      "2026-10-31": 0
+      "2026-10-31": 236
     }
   },
   {
@@ -207,18 +207,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/gestao.gadupec.com.br.ico",
     "slug": "gestao",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 2085,
-    "timeDay": 1309,
-    "timeWeek": 2132,
-    "timeMonth": 2182,
-    "timeYear": 2085,
+    "uptime": "99.89%",
+    "uptimeDay": "83.63%",
+    "uptimeWeek": "97.66%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.89%",
+    "time": 2065,
+    "timeDay": 153,
+    "timeWeek": 1838,
+    "timeMonth": 2032,
+    "timeYear": 2065,
     "dailyMinutesDown": {
-      "2026-10-31": 0
+      "2026-10-31": 236
     }
   }
 ]
